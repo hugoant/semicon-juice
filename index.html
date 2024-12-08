@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Company Financial Data</title>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden; /* Prevent scrolling */
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    select {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    /* Container takes full screen height minus header */
+    .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Each section takes half the remaining height */
+    .section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Chart and difference side by side within each section */
+    .chart-container {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .difference-container {
+        width: 30%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .difference-label {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-align: center;
+    }
+
+    .difference-value {
+        font-size: 2em;
+        font-weight: bold;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0 0 10px 0;
+    }
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Quarterly Revenue & CapEx</h1>
+    <div>
+        <label for="companySelect">Select Company:</label>
+        <select id="companySelect">
+            <option value="">Loading companies...</option>
+        </select>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Revenue Section (Top Half) -->
+    <div class="section" id="revenueSection">
+        <div class="chart-container">
+            <canvas id="financialChartRevenue"></canvas>
+        </div>
+        <div class="difference-container">
+            <div class="difference-label">QoQ change</div>
+            <div class="difference-value" id="differenceRevenue">--</div>
+        </div>
+    </div>
+
+    <!-- CapEx Section (Bottom Half) -->
+    <div class="section" id="capexSection">
+        <div class="chart-container">
+            <canvas id="financialChartCapex"></canvas>
+        </div>
+        <div class="difference-container">
+            <div class="difference-label">QoQ change</div>
+            <div class="difference-value" id="differenceCapex">--</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const companySelect = document.getElementById('companySelect');
+    let financialData = {};
+    let chartRevenue = null;
+    let chartCapex = null;
+
+    fetch('financial_data_v5.json')
+        .then(response => response.json())
+        .then(data => {
+            financialData = data;
+            const companies = Object.keys(data);
+            companySelect.innerHTML = ''; // Clear loading option
+
+            companies.forEach(c => {
+                const option = document.createElement('option');
+                option.value = c;
+                option.textContent = c;
+                companySelect.appendChild(option);
+            });
+
+            if (companies.length > 0) {
+                updateCharts(companies[0]);
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching JSON data:", error);
+            companySelect.innerHTML = '<option value="">Failed to load data</option>';
+        });
+
+    companySelect.addEventListener('change', () => {
+        const selectedCompany = companySelect.value;
+        if (selectedCompany) {
+            updateCharts(selectedCompany);
+        }
+    });
+
+    function updateCharts(company) {
+        const companyRecords = financialData[company];
+        if (!companyRecords || companyRecords.length === 0) {
+            console.warn(`No data for company: ${company}`);
+            return;
+        }
+
+        // Sort by date
+        companyRecords.sort((a,b) => new Date(a.fiscalDateEnding) - new Date(b.fiscalDateEnding));
+
+        // Convert values to billions and format
+        const labels = companyRecords.map(record => record.Quarter);
+        const revenueData = companyRecords.map(record => record.totalRevenue / 1e9);
+        const capexData = companyRecords.map(record => record.capitalExpenditures / 1e9);
+
+        // Update differences in billions
+        updateDifferenceValue('differenceRevenue', revenueData);
+        updateDifferenceValue('differenceCapex', capexData);
+
+        // Revenue Chart
+        const ctxRevenue = document.getElementById('financialChartRevenue').getContext('2d');
+        if (chartRevenue) chartRevenue.destroy();
+        chartRevenue = new Chart(ctxRevenue, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Revenue (B$)',
+                        data: revenueData,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        fill: true,
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: `Revenue for ${company}`
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        title: {
+                            display: true,
+                            text: 'Billions of USD'
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                // Format tick values as billions with 2 decimals
+                                return Number(value).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) + ' B';
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Quarter'
+                        }
+                    }
+                }
+            }
+        });
+
+        // CapEx Chart
+        const ctxCapex = document.getElementById('financialChartCapex').getContext('2d');
+        if (chartCapex) chartCapex.destroy();
+        chartCapex = new Chart(ctxCapex, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'CapEx (B$)',
+                        data: capexData,
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        fill: true,
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: `CapEx for ${company}`
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        title: {
+                            display: true,
+                            text: 'Billions of USD'
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return Number(value).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) + ' B';
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Quarter'
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function updateDifferenceValue(elementId, dataArray) {
+        const element = document.getElementById(elementId);
+        if (dataArray.length < 2) {
+            element.textContent = '--';
+            return;
+        }
+        const lastVal = dataArray[dataArray.length - 1];
+        const prevVal = dataArray[dataArray.length - 2];
+
+        const diff = lastVal - prevVal;
+        const sign = diff >= 0 ? '+' : '';
+        element.textContent = `${sign}${diff.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2})} B`;
+    }
+});
+</script>
+</body>
+</html>
