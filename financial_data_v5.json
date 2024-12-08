@@ -1,0 +1,539 @@
+{
+    "Nvidia": [
+        {
+            "fiscalDateEnding": "2024-10-27 00:00:00",
+            "totalRevenue": "35082000000",
+            "costOfRevenue": "8926000000",
+            "researchAndDevelopment": "3390000000",
+            "sellingGeneralAndAdministrative": "897000000",
+            "capitalExpenditures": "813000000",
+            "Quarter": "Q3-2024"
+        },
+        {
+            "fiscalDateEnding": "2024-07-28 00:00:00",
+            "totalRevenue": "30040000000",
+            "costOfRevenue": "7466000000",
+            "researchAndDevelopment": "3090000000",
+            "sellingGeneralAndAdministrative": "842000000",
+            "capitalExpenditures": "977000000",
+            "Quarter": "Q2-2024"
+        },
+        {
+            "fiscalDateEnding": "2024-04-28 00:00:00",
+            "totalRevenue": "26044000000",
+            "costOfRevenue": "5638000000",
+            "researchAndDevelopment": "2720000000",
+            "sellingGeneralAndAdministrative": "777000000",
+            "capitalExpenditures": "369000000",
+            "Quarter": "Q1-2024"
+        },
+        {
+            "fiscalDateEnding": "2024-01-28 00:00:00",
+            "totalRevenue": "22103000000",
+            "costOfRevenue": "5312000000",
+            "researchAndDevelopment": "2465000000",
+            "sellingGeneralAndAdministrative": "712000000",
+            "capitalExpenditures": "254000000",
+            "Quarter": "Q4-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-10-29 00:00:00",
+            "totalRevenue": "18120000000",
+            "costOfRevenue": "4720000000",
+            "researchAndDevelopment": "2294000000",
+            "sellingGeneralAndAdministrative": "689000000",
+            "capitalExpenditures": "278000000",
+            "Quarter": "Q3-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-07-30 00:00:00",
+            "totalRevenue": "13507000000",
+            "costOfRevenue": "4045000000",
+            "researchAndDevelopment": "2040000000",
+            "sellingGeneralAndAdministrative": "622000000",
+            "capitalExpenditures": "289000000",
+            "Quarter": "Q2-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-04-30 00:00:00",
+            "totalRevenue": "7192000000",
+            "costOfRevenue": "2544000000",
+            "researchAndDevelopment": "1875000000",
+            "sellingGeneralAndAdministrative": "633000000",
+            "capitalExpenditures": "248000000",
+            "Quarter": "Q1-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-01-29 00:00:00",
+            "totalRevenue": "6051000000",
+            "costOfRevenue": "2218000000",
+            "researchAndDevelopment": "1952000000",
+            "sellingGeneralAndAdministrative": "625000000",
+            "capitalExpenditures": "509000000",
+            "Quarter": "Q4-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-10-30 00:00:00",
+            "totalRevenue": "5931000000",
+            "costOfRevenue": "2754000000",
+            "researchAndDevelopment": "1945000000",
+            "sellingGeneralAndAdministrative": "631000000",
+            "capitalExpenditures": "530000000",
+            "Quarter": "Q3-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-07-31 00:00:00",
+            "totalRevenue": "6704000000",
+            "costOfRevenue": "3789000000",
+            "researchAndDevelopment": "1824000000",
+            "sellingGeneralAndAdministrative": "592000000",
+            "capitalExpenditures": "433000000",
+            "Quarter": "Q2-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-05-01 00:00:00",
+            "totalRevenue": "8288000000",
+            "costOfRevenue": "2857000000",
+            "researchAndDevelopment": "1618000000",
+            "sellingGeneralAndAdministrative": "592000000",
+            "capitalExpenditures": "361000000",
+            "Quarter": "Q2-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-01-30 00:00:00",
+            "totalRevenue": "7643000000",
+            "costOfRevenue": "2644000000",
+            "researchAndDevelopment": "1466000000",
+            "sellingGeneralAndAdministrative": "563000000",
+            "capitalExpenditures": "273000000",
+            "Quarter": "Q4-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-10-31 00:00:00",
+            "totalRevenue": "7103000000",
+            "costOfRevenue": "2472000000",
+            "researchAndDevelopment": "1403000000",
+            "sellingGeneralAndAdministrative": "557000000",
+            "capitalExpenditures": "222000000",
+            "Quarter": "Q3-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-08-01 00:00:00",
+            "totalRevenue": "6507000000",
+            "costOfRevenue": "2292000000",
+            "researchAndDevelopment": "1245000000",
+            "sellingGeneralAndAdministrative": "526000000",
+            "capitalExpenditures": "183000000",
+            "Quarter": "Q3-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-05-02 00:00:00",
+            "totalRevenue": "5661000000",
+            "costOfRevenue": "2032000000",
+            "researchAndDevelopment": "1153000000",
+            "sellingGeneralAndAdministrative": "520000000",
+            "capitalExpenditures": "298000000",
+            "Quarter": "Q2-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-01-31 00:00:00",
+            "totalRevenue": "5003000000",
+            "costOfRevenue": "1847000000",
+            "researchAndDevelopment": "1146000000",
+            "sellingGeneralAndAdministrative": "503000000",
+            "capitalExpenditures": "283000000",
+            "Quarter": "Q4-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-10-25 00:00:00",
+            "totalRevenue": "4726000000",
+            "costOfRevenue": "1766000000",
+            "researchAndDevelopment": "1047000000",
+            "sellingGeneralAndAdministrative": "515000000",
+            "capitalExpenditures": "473000000",
+            "Quarter": "Q3-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-07-26 00:00:00",
+            "totalRevenue": "3866000000",
+            "costOfRevenue": "1591000000",
+            "researchAndDevelopment": "997000000",
+            "sellingGeneralAndAdministrative": "627000000",
+            "capitalExpenditures": "217000000",
+            "Quarter": "Q2-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-04-26 00:00:00",
+            "totalRevenue": "3080000000",
+            "costOfRevenue": "1076000000",
+            "researchAndDevelopment": "735000000",
+            "sellingGeneralAndAdministrative": "293000000",
+            "capitalExpenditures": "155000000",
+            "Quarter": "Q1-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-01-26 00:00:00",
+            "totalRevenue": "3105000000",
+            "costOfRevenue": "1090000000",
+            "researchAndDevelopment": "738000000",
+            "sellingGeneralAndAdministrative": "287000000",
+            "capitalExpenditures": "144000000",
+            "Quarter": "Q4-2019"
+        }
+    ],
+    "AMD": [
+        {
+            "fiscalDateEnding": "2024-09-30 00:00:00",
+            "totalRevenue": "6819000000",
+            "costOfRevenue": "4121000000",
+            "researchAndDevelopment": "1636000000",
+            "sellingGeneralAndAdministrative": "721000000",
+            "capitalExpenditures": "132000000",
+            "Quarter": "Q3-2024"
+        },
+        {
+            "fiscalDateEnding": "2024-06-30 00:00:00",
+            "totalRevenue": "5835000000",
+            "costOfRevenue": "3621000000",
+            "researchAndDevelopment": "1583000000",
+            "sellingGeneralAndAdministrative": "650000000",
+            "capitalExpenditures": "154000000",
+            "Quarter": "Q2-2024"
+        },
+        {
+            "fiscalDateEnding": "2024-03-31 00:00:00",
+            "totalRevenue": "5473000000",
+            "costOfRevenue": "4939000000",
+            "researchAndDevelopment": "1525000000",
+            "sellingGeneralAndAdministrative": "620000000",
+            "capitalExpenditures": "142000000",
+            "Quarter": "Q1-2024"
+        },
+        {
+            "fiscalDateEnding": "2023-12-31 00:00:00",
+            "totalRevenue": "6452000000",
+            "costOfRevenue": "5154000000",
+            "researchAndDevelopment": "1511000000",
+            "sellingGeneralAndAdministrative": "644000000",
+            "capitalExpenditures": "139000000",
+            "Quarter": "Q4-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-09-30 00:00:00",
+            "totalRevenue": "5774000000",
+            "costOfRevenue": "4289000000",
+            "researchAndDevelopment": "1507000000",
+            "sellingGeneralAndAdministrative": "576000000",
+            "capitalExpenditures": "124000000",
+            "Quarter": "Q3-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-06-30 00:00:00",
+            "totalRevenue": "5331000000",
+            "costOfRevenue": "4156000000",
+            "researchAndDevelopment": "1443000000",
+            "sellingGeneralAndAdministrative": "547000000",
+            "capitalExpenditures": "125000000",
+            "Quarter": "Q2-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-03-31 00:00:00",
+            "totalRevenue": "5353000000",
+            "costOfRevenue": "5384000000",
+            "researchAndDevelopment": "1411000000",
+            "sellingGeneralAndAdministrative": "585000000",
+            "capitalExpenditures": "158000000",
+            "Quarter": "Q1-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-03-31 00:00:00",
+            "totalRevenue": "5353000000",
+            "costOfRevenue": "5384000000",
+            "researchAndDevelopment": "1411000000",
+            "sellingGeneralAndAdministrative": "585000000",
+            "capitalExpenditures": "158000000",
+            "Quarter": "Q1-2023"
+        },
+        {
+            "fiscalDateEnding": "2022-12-31 00:00:00",
+            "totalRevenue": "5732000000",
+            "costOfRevenue": "5006000000",
+            "researchAndDevelopment": "1366000000",
+            "sellingGeneralAndAdministrative": "590000000",
+            "capitalExpenditures": "124000000",
+            "Quarter": "Q4-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-09-30 00:00:00",
+            "totalRevenue": "5534000000",
+            "costOfRevenue": "3768000000",
+            "researchAndDevelopment": "1279000000",
+            "sellingGeneralAndAdministrative": "557000000",
+            "capitalExpenditures": "123000000",
+            "Quarter": "Q3-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-06-30 00:00:00",
+            "totalRevenue": "6525000000",
+            "costOfRevenue": "4114000000",
+            "researchAndDevelopment": "1300000000",
+            "sellingGeneralAndAdministrative": "592000000",
+            "capitalExpenditures": "132000000",
+            "Quarter": "Q2-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-03-31 00:00:00",
+            "totalRevenue": "5859000000",
+            "costOfRevenue": "4275000000",
+            "researchAndDevelopment": "1060000000",
+            "sellingGeneralAndAdministrative": "597000000",
+            "capitalExpenditures": "71000000",
+            "Quarter": "Q1-2022"
+        },
+        {
+            "fiscalDateEnding": "2021-12-31 00:00:00",
+            "totalRevenue": "4845000000",
+            "costOfRevenue": "2930000000",
+            "researchAndDevelopment": "811000000",
+            "sellingGeneralAndAdministrative": "412000000",
+            "capitalExpenditures": "86000000",
+            "Quarter": "Q4-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-09-30 00:00:00",
+            "totalRevenue": "4306000000",
+            "costOfRevenue": "2603000000",
+            "researchAndDevelopment": "765000000",
+            "sellingGeneralAndAdministrative": "376000000",
+            "capitalExpenditures": "85000000",
+            "Quarter": "Q3-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-06-30 00:00:00",
+            "totalRevenue": "3840000000",
+            "costOfRevenue": "2361000000",
+            "researchAndDevelopment": "659000000",
+            "sellingGeneralAndAdministrative": "341000000",
+            "capitalExpenditures": "64000000",
+            "Quarter": "Q2-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-03-31 00:00:00",
+            "totalRevenue": "3422000000",
+            "costOfRevenue": "2272000000",
+            "researchAndDevelopment": "610000000",
+            "sellingGeneralAndAdministrative": "319000000",
+            "capitalExpenditures": "66000000",
+            "Quarter": "Q1-2021"
+        },
+        {
+            "fiscalDateEnding": "2020-12-31 00:00:00",
+            "totalRevenue": "3235000000",
+            "costOfRevenue": "2101000000",
+            "researchAndDevelopment": "573000000",
+            "sellingGeneralAndAdministrative": "308000000",
+            "capitalExpenditures": "74000000",
+            "Quarter": "Q4-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-09-30 00:00:00",
+            "totalRevenue": "2790000000",
+            "costOfRevenue": "1844000000",
+            "researchAndDevelopment": "508000000",
+            "sellingGeneralAndAdministrative": "273000000",
+            "capitalExpenditures": "74000000",
+            "Quarter": "Q3-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-06-30 00:00:00",
+            "totalRevenue": "1918000000",
+            "costOfRevenue": "1299000000",
+            "researchAndDevelopment": "460000000",
+            "sellingGeneralAndAdministrative": "215000000",
+            "capitalExpenditures": "91000000",
+            "Quarter": "Q2-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-03-31 00:00:00",
+            "totalRevenue": "1755000000",
+            "costOfRevenue": "1167000000",
+            "researchAndDevelopment": "442000000",
+            "sellingGeneralAndAdministrative": "199000000",
+            "capitalExpenditures": "55000000",
+            "Quarter": "Q1-2020"
+        }
+    ],
+    "Microchip": [
+        {
+            "fiscalDateEnding": "2024-09-30 00:00:00",
+            "totalRevenue": "1163800000",
+            "costOfRevenue": "495300000",
+            "researchAndDevelopment": "240700000",
+            "sellingGeneralAndAdministrative": "157000000",
+            "capitalExpenditures": "66600000",
+            "Quarter": "Q3-2024"
+        },
+        {
+            "fiscalDateEnding": "2024-06-30 00:00:00",
+            "totalRevenue": "1241300000",
+            "costOfRevenue": "504400000",
+            "researchAndDevelopment": "241700000",
+            "sellingGeneralAndAdministrative": "150500000",
+            "capitalExpenditures": "125600000",
+            "Quarter": "Q2-2024"
+        },
+        {
+            "fiscalDateEnding": "2024-03-31 00:00:00",
+            "totalRevenue": "1325800000",
+            "costOfRevenue": "535900000",
+            "researchAndDevelopment": "240300000",
+            "sellingGeneralAndAdministrative": "161800000",
+            "capitalExpenditures": "76100000",
+            "Quarter": "Q1-2024"
+        },
+        {
+            "fiscalDateEnding": "2023-12-31 00:00:00",
+            "totalRevenue": "1765700000",
+            "costOfRevenue": "645700000",
+            "researchAndDevelopment": "266000000",
+            "sellingGeneralAndAdministrative": "172200000",
+            "capitalExpenditures": "87300000",
+            "Quarter": "Q4-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-09-30 00:00:00",
+            "totalRevenue": "2254300000",
+            "costOfRevenue": "726900000",
+            "researchAndDevelopment": "292600000",
+            "sellingGeneralAndAdministrative": "196600000",
+            "capitalExpenditures": "93900000",
+            "Quarter": "Q3-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-06-30 00:00:00",
+            "totalRevenue": "2288600000",
+            "costOfRevenue": "730200000",
+            "researchAndDevelopment": "298500000",
+            "sellingGeneralAndAdministrative": "203600000",
+            "capitalExpenditures": "141200000",
+            "Quarter": "Q2-2023"
+        },
+        {
+            "fiscalDateEnding": "2023-03-31 00:00:00",
+            "totalRevenue": "2232700000",
+            "costOfRevenue": "713400000",
+            "researchAndDevelopment": "298300000",
+            "sellingGeneralAndAdministrative": "203500000",
+            "capitalExpenditures": "151300000",
+            "Quarter": "Q1-2023"
+        },
+        {
+            "fiscalDateEnding": "2022-12-31 00:00:00",
+            "totalRevenue": "2169200000",
+            "costOfRevenue": "698400000",
+            "researchAndDevelopment": "282400000",
+            "sellingGeneralAndAdministrative": "202900000",
+            "capitalExpenditures": "164100000",
+            "Quarter": "Q4-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-09-30 00:00:00",
+            "totalRevenue": "2073200000",
+            "costOfRevenue": "675300000",
+            "researchAndDevelopment": "268600000",
+            "sellingGeneralAndAdministrative": "202400000",
+            "capitalExpenditures": "130800000",
+            "Quarter": "Q3-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-06-30 00:00:00",
+            "totalRevenue": "1963600000",
+            "costOfRevenue": "653700000",
+            "researchAndDevelopment": "269000000",
+            "sellingGeneralAndAdministrative": "188900000",
+            "capitalExpenditures": "154200000",
+            "Quarter": "Q2-2022"
+        },
+        {
+            "fiscalDateEnding": "2022-03-31 00:00:00",
+            "totalRevenue": "1844200000",
+            "costOfRevenue": "623800000",
+            "researchAndDevelopment": "259100000",
+            "sellingGeneralAndAdministrative": "187200000",
+            "capitalExpenditures": "144600000",
+            "Quarter": "Q1-2022"
+        },
+        {
+            "fiscalDateEnding": "2021-12-31 00:00:00",
+            "totalRevenue": "1757500000",
+            "costOfRevenue": "604200000",
+            "researchAndDevelopment": "245400000",
+            "sellingGeneralAndAdministrative": "177500000",
+            "capitalExpenditures": "126300000",
+            "Quarter": "Q4-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-09-30 00:00:00",
+            "totalRevenue": "1649800000",
+            "costOfRevenue": "581500000",
+            "researchAndDevelopment": "246200000",
+            "sellingGeneralAndAdministrative": "179900000",
+            "capitalExpenditures": "108200000",
+            "Quarter": "Q3-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-06-30 00:00:00",
+            "totalRevenue": "1569400000",
+            "costOfRevenue": "561800000",
+            "researchAndDevelopment": "238400000",
+            "sellingGeneralAndAdministrative": "174300000",
+            "capitalExpenditures": "112700000",
+            "Quarter": "Q2-2021"
+        },
+        {
+            "fiscalDateEnding": "2021-03-31 00:00:00",
+            "totalRevenue": "1467100000",
+            "costOfRevenue": "540300000",
+            "researchAndDevelopment": "228500000",
+            "sellingGeneralAndAdministrative": "165100000",
+            "capitalExpenditures": "71300000",
+            "Quarter": "Q1-2021"
+        },
+        {
+            "fiscalDateEnding": "2020-12-31 00:00:00",
+            "totalRevenue": "1352100000",
+            "costOfRevenue": "506300000",
+            "researchAndDevelopment": "210100000",
+            "sellingGeneralAndAdministrative": "154200000",
+            "capitalExpenditures": "51500000",
+            "Quarter": "Q4-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-09-30 00:00:00",
+            "totalRevenue": "1309500000",
+            "costOfRevenue": "501600000",
+            "researchAndDevelopment": "199800000",
+            "sellingGeneralAndAdministrative": "144700000",
+            "capitalExpenditures": "41700000",
+            "Quarter": "Q3-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-06-30 00:00:00",
+            "totalRevenue": "1309700000",
+            "costOfRevenue": "511400000",
+            "researchAndDevelopment": "198000000",
+            "sellingGeneralAndAdministrative": "146300000",
+            "capitalExpenditures": "17100000",
+            "Quarter": "Q2-2020"
+        },
+        {
+            "fiscalDateEnding": "2020-03-31 00:00:00",
+            "totalRevenue": "1326400000",
+            "costOfRevenue": "512500000",
+            "researchAndDevelopment": "221800000",
+            "sellingGeneralAndAdministrative": "165700000",
+            "capitalExpenditures": "42900000",
+            "Quarter": "Q1-2020"
+        }
+    ]
+}
